@@ -1,0 +1,85 @@
+body {
+  background-color: rgb(255, 255, 255);
+  font-family: 'Russo One', sans-serif;
+}
+
+#welcome {
+  color: rgb(82, 0, 145);
+}
+
+#win-lose {
+  text-align: center;
+  color: rgb(82, 0, 145);
+}
+
+#player, #computer {
+  text-align: center;
+  margin-bottom: 30px;
+}
+
+#player span, #computer span {
+  color: rgb(82, 0, 145);
+  border-bottom: 10px solid gray;
+  font-size: 3.56rem;
+  line-height: 1.1;
+}
+
+#rock {
+  margin-right: 10px;
+  width: 150px;
+  height: 150px;
+}
+
+#paper {
+  margin-right: 10px;
+  width: 150px;
+  height: 150px;
+}
+
+#scissors {
+  width: 150px;
+  height: 150px;
+}
+
+.computerpic {
+  border-radius: 50%;
+  width: 200px;
+  height: 200px;
+}
+
+.topbarrow {
+  background-color: rgb(11, 119, 70);
+}
+
+.result {
+  width: 300px;
+  height: 300px;
+  margin-top: 25px;
+  border-radius: 15%;
+
+}
+
+.polls {
+  color: rgb(82, 0, 145);
+}
+
+.option-images {
+  display: flex;
+  justify-content: space-around;
+}
+
+.main-title {
+  padding-bottom: 10px;
+  margin-top: 0;
+  color: rgb(82, 0, 145);
+}
+
+.option {
+  color: rgb(82, 0, 145);
+}
+
+hr {
+  height: 3px !important;
+  color: grey !important;
+  background-color: grey !important;
+}

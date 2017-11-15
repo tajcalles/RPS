@@ -1,0 +1,76 @@
+
+<html>
+
+<head>
+  <title> Rock Paper Scissors Game </title>
+  <link href='assets/styles.css' rel='stylesheet' />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.8/css/materialize.min.css">
+  <link href="https://fonts.googleapis.com/css?family=Russo+One" rel="stylesheet">
+</head>
+
+<body>
+
+  <div class='topbarrow'>
+    <hr />
+    <div class='container center'>
+      <div class='row'>
+        <div class='col s4 polls'>
+          <h3 id='winner-count'> Wins: 0 </h3>
+        </div>
+        <div class='col s4'>
+          <h3 id='tie-count' class='polls'> Ties: 0 </h3>
+        </div>
+        <div class='col s4 polls'>
+          <h3 id='loser-count'> Losses: 0 </h3>
+        </div>
+      </div>
+    </div>
+    <hr />
+  </div>
+
+  <div class='container center'>
+    <div class='row'>
+      <div class='col s8 offset-s2 center'>
+        <h1 class='main-title'> Rock | Paper | Scissors </h1>
+        <h5 class='center' id='welcome'> Let's settle this old school! </h5>
+      </div>
+    </div>
+  </div>
+
+  <div class='row center'>
+    <div class='col s6'>
+      <div id='player'>
+        <span class=''> The Contender </span>
+      </div>
+      <h5 class='option'> Your Choice: </h5>
+      <div class='option-images center'>
+        <img id='rock' onclick="playerChoice('rock')" src='assets/images/rock.jpg' alt='Image of a cartoon rock'>
+        <img id='paper' onclick="playerChoice('paper')" src='assets/images/paper.jpg' alt='Image paper'>
+        <img id='scissors' onclick="playerChoice('scissors')" src='assets/images/scissors.jpg' alt='Image of scissors'>
+      </div>
+    </div>
+    <div class='col s6'>
+      <div id='computer'>
+        <span> The Champ </span>
+      </div>
+      <img class='computerpic' src='assets/images/computerpic.jpeg' alt="computer picture" />
+    </div>
+  </div>
+  <hr />
+
+<h2 id='win-lose'> </h2>
+<div class='container'>
+  <div class='row'>
+    <div class='col s6'>
+      <div class='result' id='playerScore'> </div>
+    </div>
+    <div class='col s6'>
+      <div class='result right' id='compScore'> </div>
+    </div>
+  </div>
+</div>
+
+  <script src='assets/main.js'> </script>
+</body>
+
+</html>
