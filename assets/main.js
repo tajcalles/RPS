@@ -7,8 +7,8 @@ var tieCount = document.getElementById('tie-count');
 var wins = 0;
 var losses = 0;
 var ties = 0;
-var playerScore = document.getElementById('playerScore');
-var compScore = document.getElementById('compScore');
+var playerPick = document.getElementById('playerPick');
+var compPick = document.getElementById('compPick');
 
 function computerChoice() {
   var index = Math.floor(Math.random() * choices.length);
@@ -18,25 +18,25 @@ function computerChoice() {
 function playerChoice(choice) {
   user = choice;
   if (user === 'rock') {
-    playerScore.style.backgroundImage = "url('assets/images/rock.jpg')";
-    playerScore.style.backgroundSize = "300px 300px";
+    playerPick.style.backgroundImage = "url('assets/images/rock.jpg')";
+    playerPick.style.backgroundSize = "300px 300px";
   } else if(user === 'paper') {
-    playerScore.style.backgroundImage = "url('assets/images/paper.jpg')";
-    playerScore.style.backgroundSize = "300px 300px";
+    playerPick.style.backgroundImage = "url('assets/images/paper.jpg')";
+    playerPick.style.backgroundSize = "300px 300px";
   } else if(user === 'scissors') {
-    playerScore.style.backgroundImage = "url('assets/images/scissors.jpg')";
-    playerScore.style.backgroundSize = "300px 300px";
+    playerPick.style.backgroundImage = "url('assets/images/scissors.jpg')";
+    playerPick.style.backgroundSize = "300px 300px";
   }
   computerChoice();
   if (computer === 'rock') {
-    compScore.style.backgroundImage = "url('assets/images/rock.jpg')";
-    compScore.style.backgroundSize = "300px 300px";
+    compPick.style.backgroundImage = "url('assets/images/rock.jpg')";
+    compPick.style.backgroundSize = "300px 300px";
   } else if(computer === 'paper') {
-    compScore.style.backgroundImage = "url('assets/images/paper.jpg')";
-    compScore.style.backgroundSize = "300px 300px";
+    compPick.style.backgroundImage = "url('assets/images/paper.jpg')";
+    compPick.style.backgroundSize = "300px 300px";
   } else if(computer === 'scissors') {
-    compScore.style.backgroundImage = "url('assets/images/scissors.jpg')";
-    compScore.style.backgroundSize = "300px 300px";
+    compPick.style.backgroundImage = "url('assets/images/scissors.jpg')";
+    compPick.style.backgroundSize = "300px 300px";
   }
   game(user, computer);
 }
