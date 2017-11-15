@@ -1,6 +1,6 @@
 var choices = ['rock', 'paper', 'scissors'];
 var result = '';
-var winLose = document.getElementById('win-lose');
+var decision = document.getElementById('decision');
 var winnerCount = document.getElementById('winner-count');
 var loserCount = document.getElementById('loser-count');
 var tieCount = document.getElementById('tie-count');
@@ -80,7 +80,7 @@ function game(user, computer) {
        break;
    }
  }
-  winLose.innerText = result;
+  decision.innerText = result;
   winnerCount.innerText = "Wins: " + wins;
   loserCount.innerText = "Losses: " + losses;
   tieCount.innerText = "Ties: " + ties;

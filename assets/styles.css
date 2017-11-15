@@ -1,13 +1,13 @@
 body {
   background-color: rgb(255, 255, 255);
-  font-family: 'Russo One', sans-serif;
+  font-family: 'Permanent Marker', cursive;
 }
 
 #welcome {
   color: rgb(82, 0, 145);
 }
 
-#win-lose {
+#decision {
   text-align: center;
   color: rgb(82, 0, 145);
 }
@@ -42,7 +42,6 @@ body {
 }
 
 .computerpic {
-  border-radius: 50%;
   width: 200px;
   height: 200px;
 }
