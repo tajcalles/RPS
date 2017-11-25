@@ -18,7 +18,7 @@ function computerChoice() {
 function playerChoice(choice) {
   user = choice;
   if (user === 'rock') {
-    playerPick.style.backgroundImage = "url('assets/images/rock.jpg')";
+    playerPick.style.backgroundImage = "url('assets/images/rock.jpeg')";
     playerPick.style.backgroundSize = "300px 300px";
   } else if(user === 'paper') {
     playerPick.style.backgroundImage = "url('assets/images/paper.jpg')";
@@ -29,7 +29,7 @@ function playerChoice(choice) {
   }
   computerChoice();
   if (computer === 'rock') {
-    compPick.style.backgroundImage = "url('assets/images/rock.jpg')";
+    compPick.style.backgroundImage = "url('assets/images/rock.jpe g')";
     compPick.style.backgroundSize = "300px 300px";
   } else if(computer === 'paper') {
     compPick.style.backgroundImage = "url('assets/images/paper.jpg')";
@@ -89,7 +89,7 @@ function game(user, computer) {
 function getName() {
   var name = prompt('Welcome to Rock, Paper, Scissors! What is your name?');
   if (name === null || name === '') {
-    alert('Please put a valid name');
+    alert('Please put a valid name.');
     getName();
   } else {
     var welcome = document.getElementById('welcome');
@@ -97,4 +97,8 @@ function getName() {
   }
 }
 
-getName();
+// getName();
+// (document).ready(function() {
+//   var header = $('h1')
+//   console.log(header)
+// });
