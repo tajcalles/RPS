@@ -29,7 +29,7 @@ function playerChoice(choice) {
   }
   computerChoice();
   if (computer === 'rock') {
-    compPick.style.backgroundImage = "url('assets/images/rock.jpe g')";
+    compPick.style.backgroundImage = "url('assets/images/rock.jpeg')";
     compPick.style.backgroundSize = "300px 300px";
   } else if(computer === 'paper') {
     compPick.style.backgroundImage = "url('assets/images/paper.jpg')";
@@ -97,8 +97,8 @@ function getName() {
   }
 }
 
-// getName();
-// (document).ready(function() {
-//   var header = $('h1')
-//   console.log(header)
-// });
+getName();
+(document).ready(function() {
+  var header = $('h1')
+  console.log(header)
+});
